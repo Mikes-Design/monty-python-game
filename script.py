@@ -29,6 +29,17 @@ elif choice == try_to_reason:
     # this takes an input from the user and stores it in riddle_answer
     riddle_answer = input("What is your answer?\n")
 
-   
     print("The Knight says Hah, I can't believe you tried to answer that! I't does not matter if I kill you now or not you shall die from stupidity")
     print("The Knight lets you pass.")
+# this creates a loop that asks for input then prints a statment and breaks out of the loop
+while True: 
+    choice = input("Do you want to cross the Bridge of Death? (yes/no)").lower()
+
+    if choice == "yes":
+        print("A troll appears and asks you three questions!")
+        break
+    elif choice == "no":
+        print("You wisely turn back.")
+        break
+    else:
+        print("Please answer 'Yes' or 'No'.")
